@@ -1,0 +1,842 @@
+* {
+    box-sizing: border-box;
+}
+
+section[id] {
+    scroll-margin-top: 61px;
+}
+
+body {
+    font-family: Monserrat, sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: #000;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+body, div, ul, nav, header, footer, a, li, label {
+    margin: 0;
+    padding: 0;
+}
+
+/*--------------HEADER NAV--------------*/
+
+.header {
+    color: inherit;
+    padding: 8px 0;
+    background-color: #000e;
+    border-bottom: 1px solid #fff;
+    height: 60px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
+    height: 60px;
+}
+
+.nav-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.logo-menu {
+    max-width: 170px;
+    padding: 0 40px;
+    z-index: 20;
+}
+
+.logo-img:hover {
+    opacity: .7;
+}
+
+.logo-img {
+    width: 100%;
+}
+
+.nav-menu {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.nav-menu-item {
+    font-size: .75rem;
+    font-weight: bold;
+    margin: 0 10px;
+    line-height: 45px;
+    text-transform: uppercase;
+    max-width: max-content;
+}
+
+.nav-menu a {
+    position: relative;
+}
+.nav-menu a::after {
+    content: "";
+    background-color: #1a7fa2;
+    position: absolute;
+    left: 0;
+    top: 90%;
+    width: 100%;
+    height: 3px;
+    border-radius: 30%;
+
+    opacity: 0;
+    transition: .5s
+}
+
+.nav-menu a.selected::after,
+.nav-menu a:hover::after {
+    opacity: .9;
+}
+
+.nav-menu-link{
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 3px;
+}
+
+.nav-menu-link:hover {
+    text-shadow: #cccae255 3px 5px 3px;
+    transition: .3s;
+}
+
+.nav-toggle {
+    color: #fff;
+    background:none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 10px;
+    z-index: 20;
+    cursor: pointer;
+
+    display: none;
+}
+
+/* ---------HEADER ENDS------*/
+
+/* -----------------MAIN--------------*/
+
+.main {
+    container-name: main;
+    container-type: inline-size;
+    animation: aparecer 4s -.3s both;
+}
+
+.main__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    min-width: 200px;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+}
+
+.main__img-container {
+    height: 100dvh;
+    width: 100vw;
+    overflow: hidden;
+    text-align: center;
+}
+
+.main__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main__data-container {
+    padding: 0;
+    align-content: center;
+}
+
+/*-------------BIO SECTION----------*/
+
+.main__data-bio {
+    max-height: 100dvh;
+    max-width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: none;
+    view-timeline: --bio block;
+    align-content: center;
+    text-align: center;
+    border-bottom: 2px solid #fff;
+    overflow: hidden;
+    animation: aparecer both;
+    animation-timeline: --bio;
+    animation-range: cover 15% cover 40%;
+}
+
+.bio__text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    font-size: 90%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.bio__text-container h1 {
+    margin-top: 0;
+}
+
+.bio__img-container {
+    display: flex;
+    width: 50%;
+    height: 100dvh;
+    margin: 0;
+    border-radius: 0 50px 50px 0;
+    overflow: hidden;
+}
+
+.bio__img-back {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+/*---------------BIO SECTION ENDS------------*/
+
+/*----MUSIC SECTION----*/
+
+.main__data-music {
+    container-name: music;
+    container-type: inline-size;
+    height: 100dvh;
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #b1c1cc;
+    view-timeline: --bio block;
+    text-align: center;
+    border-bottom: 2px solid #fff;
+    overflow: hidden;
+    animation: aparecer both;
+    animation-timeline: --bio;
+    animation-range: cover 15% cover 40%;
+    align-items: center;
+    align-content: center;
+}
+
+.music__img-container {
+    width: 50%;
+    margin: 0;
+    overflow: hidden;
+    min-height: 100dvh;
+}
+
+.music__img {
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.spotify-container {
+    align-items: center;
+    width: 50%;
+    flex-grow: 1;
+    margin-left: 8%;
+}
+
+/*----MUSIC SECTION ENDS----*/
+
+/*----LIVE SETS SECTION----*/
+
+.live-sets {
+    container-name: live-set;
+    container-type: inline-size;
+    height: 100dvh;
+    max-width: 100vw;
+    text-align: center;
+    align-content: center;
+    border-bottom: 2px solid #fff;
+    animation: aparecer both;
+    animation-timeline: --bio;
+    animation-range: cover 15% cover 40%;
+    position: relative;
+    background-image: url(/assets/img/zarek-live.jpg);
+    background-position: left;
+}
+
+.live-sets::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: #000a;
+    z-index: -5;
+}
+.live-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -10;
+}
+.soundcloudgad {
+    width: 46%;
+    margin: 20px;
+}
+
+
+
+/*----LIVE SETS SECTION ENDS----*/
+
+/*----DOWNLOAD SECTION----*/
+
+.download {
+    container-name: download;
+    container-type: inline-size;
+    view-timeline: --bio block;
+    animation: aparecer both;
+    animation-timeline: --bio;
+    animation-range: cover 15% cover 40%;
+    border-bottom: 2px solid #fff;
+    min-height: min-content;
+}
+
+.catalogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 12px;
+}
+
+.producto {
+    view-timeline: --bio block;
+    animation: aparecer both;
+    animation-timeline: --bio;
+    animation-range: cover 15% cover 40%;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+    height: 100px;
+    max-width: 100vw;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.producto:first-child {
+    background-image: linear-gradient(#000a,#000a), url(../assets/img/Catalogo/ep-lady-shake.png);
+    background-size: 100%;
+    background-position: center;
+}
+
+.producto:nth-child(2) {
+    background-image: linear-gradient(#000a,#000a), url(../assets/img/Catalogo/ep-el-palo.png);
+    background-size: 100%;
+    background-position:center;
+}
+
+.producto:nth-child(3) {
+    background-image: linear-gradient(#000a,#000a), url(../assets/img/Catalogo/frequent-cover.png);
+    background-size: 100%;
+    background-position:center;
+}
+
+.producto:nth-child(4) {
+    background-image: linear-gradient(#000a,#000a), url(../assets/img/Catalogo/passilda-cover.png);
+    background-size: 100%;
+    background-position:center;
+}
+
+.producto:nth-child(5) {
+    background-image: linear-gradient(#000a,#000a), url(../assets/img/Catalogo/Sahara-cover.png);
+    background-size: 100%;
+    background-position:center;
+}
+
+.producto:nth-child(6) {
+    background-image: linear-gradient(#000a,#000a), url(../assets/img/Catalogo/keep-moving-cover.png);
+    background-size: 100%;
+    background-position:center;
+}
+
+.producto img {
+    max-width: 80px;
+    max-height: 80px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.info h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    width: 240px;
+    padding: 1px 0;
+}
+
+.info p {
+    margin: 0;
+    align-content: center;
+    width: 30%;
+    padding: 2px 0;
+    text-align: start;
+    font-weight: 300;
+    font-size: .8em;
+}
+
+.button {
+    padding: 10px;
+    padding-left: 0;
+    width: 12%;
+}
+
+.button a {
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    max-width: 20%;
+    width: 20%;
+    text-align: center;
+    color: #1a7fa2;
+    text-decoration: none;
+    padding: 10px 35%;
+}
+
+.button a:hover {
+    background-color: #1a7fa2;
+    color: #fff;
+}
+
+/*--------BOOKING SECTION------*/
+
+.form {
+    min-height: 60dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    container-name: form;
+    container-type: inline-size;
+    view-timeline: --bio block;
+    animation: aparecer both;
+    animation-timeline: --bio;
+    animation-range: cover 15% cover 40%;
+}
+
+
+.form__form {
+    max-width: 600px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "name    email"
+    "date    date"
+    "message message"
+    "button  button"
+    "warnings  warnings";
+    gap: 14px;
+    background-image: radial-gradient(#fff6, #fff2);
+    padding: 30px;
+    border-radius: 12px;
+    font-size: 15px;
+}
+
+.form__input-container:first-child{
+    grid-area: name;
+}
+
+.form__input-container:nth-child(2){
+    grid-area: email;
+}
+
+.form__input-container:nth-child(3){
+    grid-area: date;
+}
+
+.form__input-container:nth-child(4){
+    grid-area: message;
+}
+
+.form__input-container:nth-child(5){
+    grid-area: button;
+}
+
+.form__input-container:nth-child(6){
+    grid-area: warnings;
+}
+.form__input-container :is(input,textarea) {
+    width: 100%;
+    padding: 9px;
+    font-size: 14px;
+    margin: 4px;
+    margin-left: 0;
+    border: none;
+    box-shadow: 2px 2px 6px #0009;
+    border-radius: 6px;
+}
+
+.form__input-container textarea {
+    resize: none;
+    height: 90px;
+    font-family: inherit;
+}
+
+.form__input-container input[type="submit"] {
+    padding: 12px;
+    background-color: #1a7fa2;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}
+
+.form__input-container input[type="submit"]:hover {
+    background-color: #1a4f82;
+}
+
+
+/*--------MAIN END------*/
+
+/*---------------WARNING SECTION----------*/
+.warnings {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    color: #b04a53;
+    font-weight: bold;
+}
+
+
+/*-----TITULOS-----*/
+h1 {
+    text-align: center;
+    font-size: 2.12em;
+    letter-spacing: 5px;
+    margin: 3px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 3px;
+    text-decoration-color: #1a7fa2;
+}
+/*--
+h1::first-letter {
+    color: #1a7fa2;
+}
+--*/
+
+.titulo-download h2 {
+    margin-top: 20px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.76em;
+    letter-spacing: 5px;
+    margin: 3px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 3px;
+    text-decoration-color: #1a7fa2;
+}
+
+/*--
+h2::first-letter {
+    color: #1a7fa2;
+}
+--*/
+
+
+
+/*PARRAFOS*/
+p {
+    text-align: justify;
+    font-weight: 100;
+    font-size: .87em;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/*---------FOOTER SECTION----------*/
+
+.logo-footer-container {
+    width: 120px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.logo-footer {
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #000e;
+    color: inherit;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 0.7rem;
+    align-items: center;
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    font-size: 1.4rem;
+    margin-top: 15px;
+    color: #5559;
+}
+
+.social a {
+    color: #fff7;
+    transition: all ease .2s;
+}
+
+.social a:hover {
+    transform: scale(1.2);
+    color: #1a7fa2;
+}
+
+/*-------------------QUERIES---------------*/
+
+/* ---------HEADER QUERIES------*/
+
+    @media (max-width: 768px) {
+
+
+    .header {
+        height: 60px;
+    }
+    
+    .nav-menu {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-right: 20px;
+        background-color: #000d;
+        position: fixed;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        padding: 20px 0;
+
+        height: calc(100% - 60px);
+        overflow-y: auto;
+
+        top: -100%;
+        transition: top .3s;
+    }
+    
+    .nav-menu-item {
+        line-height: 60px;
+    }
+
+    .nav-menu a::after {
+        content: none;
+    }
+
+    .nav-menu-link:hover,
+    .nav-menu a.selected {
+        color: #1a7fa2;
+        transition: .5s;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-menu_visible {
+        top: 60px;
+    }
+
+    .nav-toggle:focus:not(:focus-visible) {
+        outline: none;
+    }
+    }
+
+/*-----HEADER Q-ENDS----*/
+
+
+
+/*--------MAIN QUERIES------*/
+
+@container main (max-width: 768px) {
+    .main__img-container {
+        height: 80dvh;
+    }
+    .main__img {
+        height: 130%;
+    }
+    .main__data-container {
+        padding-top: 0;
+        margin-top: 0;
+    }
+    .main__data-bio {
+        min-height: 100dvh;
+        max-height: fit-content;
+        margin: 0;
+        background-image: linear-gradient(#000c, #000c), url(../assets/img/Zarek-Studio.jpg);
+        background-size: cover;
+    }
+
+    .bio__text-container p {
+        margin: 0 10px;
+    }
+
+    .bio__text-container h1 {
+        font-size: 120%;
+        margin: 10px;
+        margin-bottom: 20px;
+    }
+
+    .bio__img-container {
+        display: none;
+    }
+
+    .bio__text-container {
+        max-height:max-content;
+        width: 100%;
+        padding: 0;
+        margin: 0 5px;
+    }
+}
+
+    /*-----------MUSIC QUERIES----------*/
+@container music (max-width: 600px) {
+    .main__data-music {
+        margin: 0;
+    }
+    
+    .music__img-container {
+        display: none;
+    }
+    
+    .spotify-container {
+        width: 100%;
+        margin: 0;
+    }
+    .spotify {
+        width: 80%;
+    }
+}
+/*-----------MUSIC Q-ENDS----------*/
+
+/*-----------LIVE SETS QUERIES----------*/
+@container live-set (max-width: 600px) {
+    .soundcloudgad {
+        width: 80%;
+    }
+    .live-video {
+        display: none;
+    }
+    .live-sets::before {
+        display: none;
+    }
+}
+/*-----------LIVE SETS Q-ENDS----------*/
+
+
+/*-----DOWNLOAD QUERIES------*/
+@container download (max-width: 768px) {
+    .info {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        align-items:start;
+    }
+    .info p, h3 {
+        width: fit-content;
+    }
+
+    .info h3 {
+        font-size: .9em;
+        width: fit-content;
+    }
+    .producto {
+        height: fit-content;
+    }
+    .button {
+        padding: 2px;
+        padding-left: 0;
+    }
+    
+    .button a {
+        padding: 0 40%;  
+    }
+
+}
+
+@container download (max-width: 340px) {
+    .producto img {
+        display: none;
+    }
+
+}
+/*-----------BOOKING QUERIES--------*/
+
+@container form (min-width: 56.25rem){
+
+    .form__form {
+        padding: 12px;
+    }
+
+}
+
+@container form (max-width: 450px){
+    .form__form {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "name"
+        "email"
+        "date"
+        "message"
+        "button"
+        "warnings";
+    }
+}
+/*-----QUERIES ENDS----*/
+
+
+/*-----------ANIMATIONS--------*/
+
+
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
