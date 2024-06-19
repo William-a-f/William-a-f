@@ -811,6 +811,7 @@ footer {
         margin-bottom: 0;
         justify-content: flex-start;
         border: none;
+        background-color: #0003;
     }
 
     .release-img-mb {
