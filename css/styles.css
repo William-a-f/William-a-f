@@ -195,10 +195,10 @@ body, div, ul, nav, header, footer, a, li, label {
 }
 
 .release-text>.button {
-    margin-top: 10px;
-    margin-left: 4px;
+    margin-top: 15px;
     margin-bottom: 0;
-    width: 100%;
+    width: 90%;
+    justify-content: flex-start;
 }
 
 .release-text>.button a{
