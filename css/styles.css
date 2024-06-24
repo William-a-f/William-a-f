@@ -202,10 +202,12 @@ body, div, ul, nav, header, footer, a, li, label {
 }
 
 .release-text>.button a{
-    padding: 10px 10%;
+    padding: 10px;
     color: #c92a2b;
     text-shadow: none;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
 }
 
 .release-text>.button a:hover {
