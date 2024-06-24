@@ -213,6 +213,7 @@ body, div, ul, nav, header, footer, a, li, label {
 .release-text>.button a:hover {
     background-color: #c92a2b;
     color: #fff;
+    transition-duration: .3s;
 }
 
 .release-img-container {
@@ -531,6 +532,7 @@ body, div, ul, nav, header, footer, a, li, label {
 .button a:hover {
     background-color: #1a7fa2;
     color: #fff;
+    transition-duration: .3s;
 }
 
 /*--------BOOKING SECTION------*/
