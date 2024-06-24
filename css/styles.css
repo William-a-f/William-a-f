@@ -175,7 +175,7 @@ body, div, ul, nav, header, footer, a, li, label {
     margin: 0;
     text-align: start;
     font-size: 3.4em;
-    text-decoration-color: #c92a2b;
+    text-decoration-color: rgb(201,42,43);
 }
 
 .release-text h3 {
