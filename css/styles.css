@@ -938,17 +938,6 @@ footer {
 
 /*-----DOWNLOAD QUERIES------*/
 @container download (max-width: 768px) {
-    .catalogo {
-        flex-direction: column;
-    }
-    .titulo-download h2 {
-        font-size: 2em;
-    }
-
-    .producto img {
-        width: 70%;
-        margin-top: 50px;
-    }
     .info {
         display: flex;
         flex-direction: column;
@@ -966,17 +955,11 @@ footer {
     }
 
     .info h3 {
-        margin-top: 10px;
-        font-size: 1.5em;
+        font-size: .9em;
         width: fit-content;
     }
     .producto {
-        height: 80dvh;
-        scale: 1;
-        width: 90%;
-        animation-range: cover 10% cover 20%;
-        display: flex;
-        justify-content: space-evenly;
+        height: fit-content;
     }
 
     .button {
