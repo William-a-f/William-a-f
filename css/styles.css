@@ -475,7 +475,7 @@ body, div, ul, nav, header, footer, a, li, label {
 }
 
 .producto img {
-    max-width: 60%;
+    width: 60%;
     border-radius: 8px;
     margin-top: 20px;
 }
@@ -943,7 +943,8 @@ footer {
     }
 
     .producto img {
-        width: 50%;
+        width: 70%;
+        margin-top: 50px;
     }
     .info {
         display: flex;
@@ -957,21 +958,24 @@ footer {
 
     .info p {
         height: fit-content;
+        text-align: center;
+        font-size: 1.2;
     }
 
     .info h3 {
-        font-size: .9em;
+        font-size: 1.2em;
         width: fit-content;
     }
     .producto {
-        height: 520px;
-        width: 80%;
+        height: 550px;
+        scale: 1;
+        width: 90%;
         animation-range: cover 20% cover 40%;
     }
 
     .button {
         margin-top: 30px;
-        width: 70%;
+        width: 80%;
     }
     .button a {
         padding: 8px 20%;
