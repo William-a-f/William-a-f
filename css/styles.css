@@ -662,7 +662,7 @@ h1::first-letter {
 
 h2 {
     text-align: center;
-    font-size: 1.76em;
+    font-size: 2.12em;
     letter-spacing: 5px;
     margin: 3px;
     margin-top: 20px;
@@ -884,7 +884,6 @@ footer {
     }
 
     .bio__text-container h1 {
-        font-size: 120%;
         margin: 10px;
         margin-bottom: 20px;
     }
