@@ -234,7 +234,7 @@ body, div, ul, nav, header, footer, a, li, label {
     width: 295px;
     height: 295px;
     box-shadow: 0 0 30px #c92a2b77;
-    border-radius: 50%;
+    border-radius: 25px;
 }
 
 .main-img-overlay {
@@ -828,8 +828,8 @@ footer {
     .release-img-mb-size {
         margin-top: 80px;
         margin-bottom: 60px;
-        width: 270px;
-        border-radius: 50%;
+        width: 280px;
+        border-radius: 25px;
     }
 
     .release-text h2 {
