@@ -11,6 +11,12 @@ navToggle.addEventListener("click", () => {
 	}
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+	const logo =
+	document.querySelector('.home-page .logo-menu');
+	logo.classList.add('visible');
+});
+
 const menuLinks =document.querySelectorAll('.nav-menu a[href^="/"]');
 
 const observer = new IntersectionObserver((entries) => {
