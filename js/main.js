@@ -15,7 +15,7 @@ const menuLinks =document.querySelectorAll('.nav-menu a[href^="/"]');
 
 const observer = new IntersectionObserver((entries) => {
 	entries.forEach(entry => {
-		const id = entry.target.getAttribute("section [id]");
+		const id = entry.target.getAttribute("section");
 		const menuLink = document.querySelector(`.nav-menu a[href="/${id}"]`)
 
 		if (entry.isIntersecting) {
@@ -23,7 +23,7 @@ const observer = new IntersectionObserver((entries) => {
 			menuLink.classList.add("selected");
 		}
 	});
-}, {rootMargin: "-50% 0px -50% 0px"});
+}, {rootMargin: "0px"});
 
 menuLinks.forEach(menuLink => {
 	menuLink.addEventListener("click", function() {
