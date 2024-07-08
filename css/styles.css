@@ -2,10 +2,6 @@
     box-sizing: border-box;
 }
 
-section[id] {
-    scroll-margin-top: 61px;
-}
-
 body {
     font-family: Monserrat, sans-serif;
     font-optical-sizing: auto;
