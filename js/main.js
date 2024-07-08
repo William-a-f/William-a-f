@@ -13,7 +13,7 @@ navToggle.addEventListener("click", () => {
 
 document.addEventListener('DOMContentLoaded', function() {
 	const logo =
-	document.querySelector('.home-page .logo-menu');
+	document.querySelector('.logo-menu');
 	logo.classList.add('visible');
 });
 
