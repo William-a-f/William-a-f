@@ -74,11 +74,6 @@ body, div, ul, nav, header, footer, a, li, label {
 }
 
 .menu-container .nav {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1400px;
-    margin: 0;
-    height: 60px;
     z-index: 20;
     margin-bottom: 50px;
 }
@@ -867,8 +862,8 @@ footer {
         display: flex;
         justify-content: center;
         position: absolute;
-        bottom: 20px;
-        gap: 50px;
+        bottom: 30px;
+        gap: 40px;
         font-size: 1.4rem;
         margin-top: 15px;
         color: #fff;
@@ -881,13 +876,8 @@ footer {
     }
 
     .menu-container .nav {
-        display: flex;
-        justify-content: space-between;
-        max-width: 1400px;
-        margin: 0;
-        height: 60px;
-        z-index: 20;
-        margin-bottom: 50px;
+        flex-direction: column;
+        height: 100%;
     }
 
     .home-page .logo-menu {
@@ -899,13 +889,24 @@ footer {
         z-index: 20;
     }
 
+    .home-page .nav-menu {
+        position: static;
+        height: 100%;
+        background: none;
+        margin: 0;
+    }
+
     .home-page .nav-menu-item {
-        font-size: .9rem;
+        font-size: .8rem;
         font-weight: bold;
         margin: 0 20px;
-        line-height: 55px;
         text-transform: uppercase;
         max-width: max-content;
+        color: #fff;
+    }
+
+    .home-page .nav-menu-link {
+        width: max-content;
     }
 
 
@@ -958,6 +959,20 @@ footer {
         outline: none;
     }
     }
+
+    @media (max-width: 580px) {
+    
+    .home-page .social {
+        gap: 20px;
+    }
+    }
+
+    @media (max-width: 380px) {
+    
+        .home-page .social {
+            gap: 10px;
+        }
+        }
 
 /*-----HEADER Q-ENDS----*/
 
