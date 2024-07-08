@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	const path =
 	window.location.pathname;
 
-	const menuLinks = document.querySelectorAll('nav-menu a');
+	const menuLinks = document.querySelectorAll('nav-menu-link');
 
 	menuLinks.forEach(link => {
 		if (link.getAttribute('href') === path) {

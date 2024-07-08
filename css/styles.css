@@ -129,10 +129,10 @@ body, div, ul, nav, header, footer, a, li, label {
     max-width: max-content;
 }
 
-.nav-menu a {
+.nav-menu-link {
     position: relative;
 }
-.nav-menu a::after {
+.nav-menu-link::after {
     content: "";
     background-color: #1a7fa2;
     position: absolute;
@@ -146,7 +146,7 @@ body, div, ul, nav, header, footer, a, li, label {
     transition: .5s
 }
 
-.nav-menu a.selected::after,
+.nav-menu-link.selected::after,
 .nav-menu a:hover::after {
     opacity: .9;
 }
