@@ -116,7 +116,7 @@ body, div, ul, nav, header, footer, a, li, label {
 }
 
 .logo-img:hover {
-    opacity: .5;
+    opacity: .6;
     transition: opacity .2s ease-in-out;
 }
 
