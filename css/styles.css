@@ -864,15 +864,8 @@ footer {
     @media (max-width: 700px) {
     
     .home-page .social {
-        display: flex;
-        justify-content: center;
-        position: absolute;
         bottom: 30px;
         gap: 40px;
-        font-size: 1.4rem;
-        margin-top: 15px;
-        color: #fff;
-        z-index: 20;
     }
     
     .home-page .social a {
@@ -964,6 +957,7 @@ footer {
     
     .home-page .social {
         gap: 20px;
+        bottom: 100px;
     }
     }
 
