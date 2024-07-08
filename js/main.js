@@ -13,17 +13,29 @@ navToggle.addEventListener("click", () => {
 
 const menuLinks =document.querySelectorAll('.nav-menu a[href^="/"]');
 
-const observer = new IntersectionObserver((entries) => {
-	entries.forEach(entry => {
-		const id = entry.target.getAttribute("section");
-		const menuLink = document.querySelector(`.nav-menu a[href="/${id}"]`)
+document.addEventListener('DOMContentLoaded', function() {
+	const path =
+	window.location.pathname;
 
-		if (entry.isIntersecting) {
-			document.querySelector(".nav-menu a.selected").classList.remove("selected");
-			menuLink.classList.add("selected");
+	const menuLinks = document.querySelectorAll('nav-menu a');
+
+	menuLinks.forEach(link => {
+		if (link.getAttribute('href') === path) {
+			link.classList.add('selected');
 		}
 	});
-}, {rootMargin: "0px"});
+});
+// const observer = new IntersectionObserver((entries) => {
+	// entries.forEach(entry => {
+		// const id = entry.target.getAttribute("section");
+		// const menuLink = document.querySelector(`.nav-menu a[href="/${id}"]`)
+// 
+		// if (entry.isIntersecting) {
+			// document.querySelector(".nav-menu a.selected").classList.remove("selected");
+			// menuLink.classList.add("selected");
+		// }
+	// });
+// }, {rootMargin: "0px"});
 
 menuLinks.forEach(menuLink => {
 	menuLink.addEventListener("click", function() {
