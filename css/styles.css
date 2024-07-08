@@ -1,4 +1,4 @@
-* {
+*, *::after {
     box-sizing: border-box;
 }
 
@@ -15,6 +15,14 @@ body {
     overflow-x: hidden;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
+img, video, iframe {
+    max-width: 100%;
+    height: auto;
+}
 body, div, ul, nav, header, footer, a, li, label {
     margin: 0;
     padding: 0;
