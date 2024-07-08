@@ -218,6 +218,9 @@ body, div, ul, nav, header, footer, a, li, label {
     padding-right: 0;
     margin: 0;
     position: relative;
+}
+
+.release-wrapper {
     container-name: main-release;
     container-type: inline-size;
 }
@@ -877,9 +880,8 @@ footer {
         transition: all ease .2s;
     }
 
-    .logo-img {
-        width: 300px;
-        margin: 5px;
+    .menu-container .logo-img {
+        width: 80%;
     }
 
     .menu-container .nav {
