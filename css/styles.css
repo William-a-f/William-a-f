@@ -98,17 +98,9 @@ body, div, ul, nav, header, footer, a, li, label {
     max-width: 170px;
     padding: 0 40px;
     z-index: 20;
-}
-
-.logo-menu {
-    opacity: 0;
-    transform: scale(2);
-    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
-}
-
-.logo-menu.visible {
-    opacity: 1;
-    transform: scale(1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo-img:hover {
@@ -117,6 +109,14 @@ body, div, ul, nav, header, footer, a, li, label {
 
 .logo-img {
     width: 100%;
+    opacity: 0;
+    transform: scale(2);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.logo-img.visible {
+    opacity: 1;
+    transform: scale(1);
 }
 
 .nav-menu {

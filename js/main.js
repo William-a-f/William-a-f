@@ -12,9 +12,13 @@ navToggle.addEventListener("click", () => {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-	const logo =
-	document.querySelector('.logo-menu');
-	logo.classList.add('visible');
+	const path =
+	window.location.pathname;
+	if (path === '/' || path.endsWith('/index.html')) {
+		const logo =
+		document.querySelector('.logo-img');
+		logo.classList.add('visible');
+		}
 });
 
 const menuLinks =document.querySelectorAll('.nav-menu a[href^="/"]');
