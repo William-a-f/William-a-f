@@ -11,19 +11,19 @@ navToggle.addEventListener("click", () => {
 	}
 });
 
-const menuLinks =document.querySelectorAll('.nav-menu a[href^="#"]');
+const menuLinks =document.querySelectorAll('.nav-menu a[href^="/"]');
 
 const observer = new IntersectionObserver((entries) => {
 	entries.forEach(entry => {
 		const id = entry.target.getAttribute("id");
-		const menuLink = document.querySelector(`.nav-menu a[href="#${id}"]`)
+		const menuLink = document.querySelector(`.nav-menu a[href="/${id}"]`)
 
 		if (entry.isIntersecting) {
 			document.querySelector(".nav-menu a.selected").classList.remove("selected");
 			menuLink.classList.add("selected");
 		}
 	});
-}, {rootMargin: "-30% 0px -70% 0px"});
+}, {rootMargin: "-1% 0px -99% 0px"});
 
 menuLinks.forEach(menuLink => {
 	menuLink.addEventListener("click", function() {

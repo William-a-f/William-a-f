@@ -21,29 +21,80 @@ body, div, ul, nav, header, footer, a, li, label {
 }
 
 /*--------------HEADER NAV--------------*/
-
-.header {
-    color: inherit;
-    padding: 8px 0;
-    background-color: #000e;
-    border-bottom: 1px solid #fff;
-    height: 60px;
-    position: sticky;
+.home-page {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.home-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #000d;
+    position: absolute;
+    z-index: 5;
+}
+.home-live-video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.home-img-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
     top: 0;
-    z-index: 10;
+    left: 0;
+}
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.nav {
+.home-page .social {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px;
+    gap: 50px;
+    font-size: 1.4rem;
+    margin-top: 15px;
+    color: #fff;
+    z-index: 20;
+}
+
+.home-page .social a {
+    color: #fffc;
+    transition: all ease .2s;
+}
+
+.menu-container .nav {
     display: flex;
     justify-content: space-between;
     max-width: 1400px;
-    margin: 0 auto;
+    margin: 0;
     height: 60px;
+    z-index: 20;
+    margin-bottom: 50px;
 }
 
 .nav-link {
     color: inherit;
     text-decoration: none;
+}
+
+.home-page .logo-menu {
+    max-width: 400px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
 }
 
 .logo-menu {
@@ -62,8 +113,16 @@ body, div, ul, nav, header, footer, a, li, label {
 
 .nav-menu {
     display: flex;
-    margin-right: 40px;
     list-style: none;
+}
+
+.home-page .nav-menu-item {
+    font-size: .9rem;
+    font-weight: bold;
+    margin: 0 20px;
+    line-height: 55px;
+    text-transform: uppercase;
+    max-width: max-content;
 }
 
 .nav-menu-item {
@@ -121,6 +180,27 @@ body, div, ul, nav, header, footer, a, li, label {
     display: none;
 }
 
+.header {
+    color: inherit;
+    padding: 8px 0;
+    background-color: #000e;
+    border-bottom: 1px solid #fff;
+    height: 60px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
+    height: 60px;
+}
+
+
+
 /* ---------HEADER ENDS------*/
 
 /* -----------------MAIN--------------*/
@@ -129,10 +209,6 @@ body, div, ul, nav, header, footer, a, li, label {
     container-name: main;
     container-type: inline-size;
     animation: aparecer 4s -.3s both;
-}
-
-.main__img-container {
-
 }
 
 .main__wrapper {
@@ -173,6 +249,18 @@ body, div, ul, nav, header, footer, a, li, label {
     border-right: 2px solid #fff;
     border-radius: 0 20px 20px 0;
     background-color: #0006;
+    left: -100%;
+    text-align: left;
+}
+
+.release-text, .release-img {
+    opacity: 0;
+    position: relative;
+    transition: all 1.5s ease;
+}
+.release-text.animate {
+    left: 0;
+    opacity: 1;
 }
 
 .release-text h2 {
@@ -228,6 +316,7 @@ body, div, ul, nav, header, footer, a, li, label {
     align-items: center;
     margin-bottom: 100px;
     overflow: hidden;
+    text-align: right;
 }
 
 .release-img {
@@ -235,6 +324,12 @@ body, div, ul, nav, header, footer, a, li, label {
     height: 295px;
     box-shadow: 0 0 30px #c92a2b77;
     border-radius: 25px;
+    right: -100%;
+}
+
+.release-img.animate {
+    right: 0;
+    opacity: 1;
 }
 
 .main-img-overlay {
@@ -283,7 +378,6 @@ body, div, ul, nav, header, footer, a, li, label {
     view-timeline: --bio block;
     align-content: center;
     text-align: center;
-    border-bottom: 2px solid #fff;
     overflow: hidden;
     animation: aparecer both;
     animation-timeline: --bio;
@@ -299,7 +393,19 @@ body, div, ul, nav, header, footer, a, li, label {
     font-size: 90%;
     padding-left: 10px;
     padding-right: 10px;
+    text-align: right;
 }
+
+.bio-text {
+    right: -100%;
+}
+
+.bio-text, .bio__img-back {
+    position: relative;
+    opacity: 0;
+    transition: all 1.5s ease;
+}
+
 .bio__text-container h1 {
     margin-top: 0;
 }
@@ -315,6 +421,7 @@ body, div, ul, nav, header, footer, a, li, label {
     margin: 0;
     border-radius: 0 50px 50px 0;
     overflow: hidden;
+    text-align: left;
 }
 
 .bio__img-back {
@@ -322,6 +429,17 @@ body, div, ul, nav, header, footer, a, li, label {
     height: 100%;
     object-fit: cover;
     object-position: bottom;
+    left: -100%;
+}
+
+.bio__img-back.animate {
+    left: 0;
+    opacity: 1;
+}
+
+.bio-text.animate {
+    right: 0;
+    opacity: 1;
 }
 
 /*---------------BIO SECTION ENDS------------*/
@@ -735,7 +853,7 @@ footer {
 }
 
 .social a:hover {
-    transform: scale(1.2);
+    transform: scale(1.5);
     color: #1a7fa2;
 }
 
