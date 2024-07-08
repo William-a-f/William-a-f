@@ -970,7 +970,7 @@ footer {
     @media (max-width: 380px) {
     
         .home-page .social {
-            gap: 10px;
+            gap: 12px;
         }
         }
 
