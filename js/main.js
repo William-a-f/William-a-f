@@ -11,16 +11,6 @@ navToggle.addEventListener("click", () => {
 	}
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-	const path =
-	window.location.pathname;
-	if (path === '/' || path.endsWith('/index.html')) {
-		const logo =
-		document.querySelector('.logo-img');
-		logo.classList.add('visible');
-		}
-});
-
 const menuLinks =document.querySelectorAll('.nav-menu a[href^="/"]');
 
 const observer = new IntersectionObserver((entries) => {
