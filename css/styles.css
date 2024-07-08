@@ -54,6 +54,7 @@ body, div, ul, nav, header, footer, a, li, label {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .home-page .social {
@@ -85,7 +86,8 @@ body, div, ul, nav, header, footer, a, li, label {
 
 .home-page .logo-menu {
     max-width: 400px;
-    padding: 0;
+    margin: 10px;
+    padding: 0 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -875,18 +877,14 @@ footer {
         transition: all ease .2s;
     }
 
+    .logo-img {
+        width: 300px;
+        margin: 5px;
+    }
+
     .menu-container .nav {
         flex-direction: column;
         height: 100%;
-    }
-
-    .home-page .logo-menu {
-        max-width: 400px;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 20;
     }
 
     .home-page .nav-menu {
