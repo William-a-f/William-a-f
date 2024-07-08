@@ -862,6 +862,51 @@ footer {
 /* ---------HEADER QUERIES------*/
 
     @media (max-width: 700px) {
+    
+    .home-page .social {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: 20px;
+        gap: 50px;
+        font-size: 1.4rem;
+        margin-top: 15px;
+        color: #fff;
+        z-index: 20;
+    }
+    
+    .home-page .social a {
+        color: #fffc;
+        transition: all ease .2s;
+    }
+
+    .menu-container .nav {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1400px;
+        margin: 0;
+        height: 60px;
+        z-index: 20;
+        margin-bottom: 50px;
+    }
+
+    .home-page .logo-menu {
+        max-width: 400px;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 20;
+    }
+
+    .home-page .nav-menu-item {
+        font-size: .9rem;
+        font-weight: bold;
+        margin: 0 20px;
+        line-height: 55px;
+        text-transform: uppercase;
+        max-width: max-content;
+    }
 
 
     .header {
