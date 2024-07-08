@@ -5,7 +5,9 @@ document.addEventListener('DOMContentLoaded', function() {
 		const logo =
 		document.querySelector('.home-page .logo-img');
       if (logo) {
-		logo.classList.add('visible');
-    }
-	}
+				setTimeout(() => {
+						logo.classList.add('visible');
+    		}, 100);
+			}
+		}
 });
