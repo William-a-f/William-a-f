@@ -224,8 +224,8 @@ body, div, ul, nav, header, footer, a, li, label {
 
 .home-page .nav, .home-page .social {
     opacity: 0;
-    transition: opacity 2s ease-in-out;
     bottom: -100;
+    transition: all ease-in-out 2s;
 }
 
 .home-page .nav.visible, .home-page .social.visible {
