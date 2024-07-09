@@ -16,11 +16,11 @@ document.addEventListener('DOMContentLoaded', function() {
 					// menu.classList.remove('hidden');
 					menu.classList.add('visible');
 
-				}, 1500);
+				}, 1200);
 
 				setTimeout(() =>{
 					// footer.classList.remove('hidden');
 					footer.classList.add('visible');
-				}, 2500);
+				}, 2000);
 			}
 });
