@@ -1189,6 +1189,10 @@ footer {
     .release-img-container {
         display: none;
     }
+
+    .scroll-down.visible {
+        display: none;
+    }
 }
 
 
