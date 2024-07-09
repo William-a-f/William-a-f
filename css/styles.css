@@ -1190,7 +1190,7 @@ footer {
         display: none;
     }
 
-    .scroll-down.visible {
+    .scroll-container {
         display: none;
     }
 }

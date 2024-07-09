@@ -1,8 +1,10 @@
+// scroll-animacion
 window.onload = function(){
 	$('#onload').fadeOut();
 	$('body').removeClass('oculto');
 }
 
+// navToggle- mostrar
 const navToggle = document.querySelector(".nav-toggle");
 const navMenu = document.querySelector(".nav-menu");
 
@@ -16,6 +18,7 @@ navToggle.addEventListener("click", () => {
 	}
 });
 
+// direccionamiento a paginas navToggle
 const menuLinks =document.querySelectorAll('.nav-menu a[href^="/"]');
 
 const observer = new IntersectionObserver((entries) => {
@@ -42,6 +45,7 @@ menuLinks.forEach(menuLink => {
 	}
 });
 
+// validacion de formulario
 const nombre = document.getElementById("name");
 const email = document.getElementById("email");
 const message = document.getElementById("message");

@@ -1,3 +1,4 @@
+// animaciones de logo, social y flechas
 document.addEventListener('DOMContentLoaded', function() {
 		const logo =
 		document.querySelector('.home-page .logo-img');
