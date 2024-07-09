@@ -373,11 +373,13 @@ body, div, ul, nav, header, footer, a, li, label {
     margin-bottom: 100px;
     overflow: hidden;
     text-align: right;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .release-img {
-    width: 295px;
-    height: 295px;
+    min-width: 295px;
+    max-height: 400px;
     box-shadow: 0 0 30px #c92a2b77;
     border-radius: 25px;
     right: -100%;
@@ -546,7 +548,8 @@ body, div, ul, nav, header, footer, a, li, label {
     position: absolute;
     bottom: 20px;
     left: 50%;
-    transform: translateX(-50%);
+
+
 }
 .scroll-down {
     display: flex;
@@ -555,8 +558,8 @@ body, div, ul, nav, header, footer, a, li, label {
     margin-bottom: 10px;
     position: relative;
     opacity: 0;
-    bottom: -100;
-    transition: opacity 1s ease-in-out;
+    bottom: -150px;
+    transition: all ease-in-out 2s;
 }
 
 .scroll-down.visible {
@@ -566,8 +569,9 @@ body, div, ul, nav, header, footer, a, li, label {
 
 .scroll-down span {
     display: block;
-    width: 26px;
-    height: 26px;
+    border-radius: 4px;
+    width: 27px;
+    height: 27px;
     border-bottom: 3px solid #fff;
     border-left: 3px solid #fff;
     transform: rotate(-45deg);
