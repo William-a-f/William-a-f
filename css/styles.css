@@ -59,7 +59,6 @@ body, div, ul, nav, header, footer, a, li, label {
     justify-content: center;
     align-items: center;
     width: 100%;
-    position: relative;
 }
 
 .home-page .social {
