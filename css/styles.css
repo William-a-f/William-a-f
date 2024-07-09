@@ -217,9 +217,9 @@ body, div, ul, nav, header, footer, a, li, label {
     height: 100%;
 }
 
-.hidden {
+/* .hidden {
     display: none;
-}
+} */
 
 .home-page .nav, .home-page .social {
     opacity: 0;

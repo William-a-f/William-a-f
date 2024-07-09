@@ -13,13 +13,13 @@ document.addEventListener('DOMContentLoaded', function() {
     		}, 100);
 
 				setTimeout(() => {
-					menu.classList.remove('hidden');
+					// menu.classList.remove('hidden');
 					menu.classList.add('visible');
 
 				}, 1500);
 
 				setTimeout(() =>{
-					footer.classList.remove('hidden');
+					// footer.classList.remove('hidden');
 					footer.classList.add('visible');
 				}, 2500);
 			}
