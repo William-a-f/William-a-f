@@ -8,14 +8,14 @@ document.addEventListener('DOMContentLoaded', function() {
 		const flechas =
 		document.querySelector('.scroll-down');
 
-		if (window.location.pathname === '/' || window.location.pathname.endsWith('/music')) {
+		if (window.location.pathname.endsWith('/music.html')) {
 			setTimeout(() => {
 				flechas.classList.add('visible');
 			}, 1200);
 		}
 
 	
-	if (window.location.pathname === '/' || window.location.pathname.endsWith('/index')) {
+	if (window.location.pathname === '/' || window.location.pathname.endsWith('/index.html')) {
 				setTimeout(() => {
 						logo.classList.add('visible');
     		}, 100);
