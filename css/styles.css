@@ -13,6 +13,7 @@ body {
     background-color: #000;
     color: #fff;
     overflow-x: hidden;
+    height: 100vh;
 }
 
 html, body {
@@ -597,7 +598,7 @@ body, div, ul, nav, header, footer, a, li, label {
     animation-timeline: --bio;
     animation-range: cover 15% cover 40%;
     border-bottom: 2px solid #fff;
-    min-height: min-content;
+    min-height: max-content;
 }
 
 .catalogo {
@@ -616,14 +617,13 @@ body, div, ul, nav, header, footer, a, li, label {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #fff;
     border: 1px solid #ddd1;
     border-radius: 8px;
     padding: 10px;
     margin: 10px;
     margin-bottom: 40px;
     width: 32%;
-    height: 480px;
+    min-height: 480px;
     max-width: 100vw;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     transform: scale(.9);
@@ -691,6 +691,7 @@ body, div, ul, nav, header, footer, a, li, label {
     display: flex;
     justify-content: center;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .button a {
