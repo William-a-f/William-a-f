@@ -65,13 +65,15 @@ body, div, ul, nav, header, footer, a, li, label {
 .home-page .social {
     display: flex;
     justify-content: center;
-    position: absolute;
-    bottom: 20px;
     gap: 50px;
     font-size: 1.4rem;
     margin-top: 15px;
     color: #fff;
     z-index: 20;
+    opacity: 0;
+    bottom: -150;
+    position: relative;
+    transition: all ease-in-out 1.3s;
 }
 
 .home-page .social a {
@@ -229,12 +231,6 @@ body, div, ul, nav, header, footer, a, li, label {
     transition: all ease-in-out 1.3s;
 }
 
-.home-page .social {
-    opacity: 0;
-    bottom: -150;
-    position: relative;
-    transition: all ease-in-out 1.3s;
-}
 
 .home-page .nav.visible {
     opacity: 1;
@@ -243,7 +239,7 @@ body, div, ul, nav, header, footer, a, li, label {
 
 .home-page .social.visible {
     opacity: 1;
-    bottom: 20px;
+    bottom: 25px;
 }
 
 /* ---------HEADER ENDS------*/
