@@ -233,6 +233,7 @@ body, div, ul, nav, header, footer, a, li, label {
 .home-page .nav {
     opacity: 0;
     bottom: -200;
+    position: relative;
     transition: all ease-in-out 1.3s;
 }
 
