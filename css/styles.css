@@ -217,7 +217,18 @@ body, div, ul, nav, header, footer, a, li, label {
     height: 100%;
 }
 
+.hidden {
+    display: none;
+}
 
+.home-page .nav, .home-page .social {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.home-page .nav.visible, .home-page .social.visible {
+    opacity: 1;
+}
 
 /* ---------HEADER ENDS------*/
 
