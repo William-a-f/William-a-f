@@ -32,4 +32,12 @@ document.addEventListener('DOMContentLoaded', function() {
 					footer.classList.add('visible');
 				}, 2000);
 			}
+
+	if (window.matchMedia("(max-width: 768px)").matches) {
+		var scrollDownContainer = document.querySelector('.scroll-down.visible');
+		if (scrollDownContainer) {
+			scrollDownContainer.classList.remove('visible');
+		}
+	}
 });
+
