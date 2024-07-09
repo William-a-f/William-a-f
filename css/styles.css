@@ -111,7 +111,7 @@ body, div, ul, nav, header, footer, a, li, label {
 
 .menu-container .nav {
     z-index: 20;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     opacity: 0;
     bottom: -100px;
     position: relative;
