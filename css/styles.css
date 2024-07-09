@@ -25,6 +25,8 @@ body, div, ul, nav, header, footer, a, li, label {
 }
 
 /*--------------HEADER NAV--------------*/
+
+/*-----------HOME PAGE-------*/
 .home-page {
     height: 100vh;
     width: 100vw;
@@ -54,58 +56,16 @@ body, div, ul, nav, header, footer, a, li, label {
     top: 0;
     left: 0;
 }
-.menu-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-.social-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    bottom: 25px;
-}
-.social-container .social {
-    display: flex;
-    justify-content: center;
-    gap: 46px;
-    font-size: 1.3rem;
-    position: relative;
-    color: #fff;
-    z-index: 20;
-    opacity: 0;
-    bottom: -150;
-    transition: all ease-in-out 1.3s;
-}
-
-.social-container .social a {
-    color: #fffc;
-    transition: all ease .2s;
-}
-
+/*-----------LOGO INDEX-------*/
 .home-page .logo-img {
     opacity: 0;
     transform: scale(4);
     transition: opacity 2s ease-in-out, transform 1s ease-in-out;
-  }
-  
-  .home-page .logo-img.visible {
-    opacity: 1;
-    transform: scale(1);
-  }
-
-.menu-container .nav {
-    z-index: 20;
-    margin-bottom: 50px;
 }
 
-.nav-link {
-    color: inherit;
-    text-decoration: none;
+.home-page .logo-img.visible {
+    opacity: 1;
+    transform: scale(1);
 }
 
 .home-page .logo-menu {
@@ -137,10 +97,31 @@ body, div, ul, nav, header, footer, a, li, label {
 .logo-img {
     width: 100%;
 }
+/*-----------LOGO INDEX ENDS-------*/
 
-.nav-menu {
+/*-----------MENU INDEX-------*/
+.menu-container {
     display: flex;
-    list-style: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.menu-container .nav {
+    z-index: 20;
+    margin-bottom: 50px;
+    opacity: 0;
+    bottom: -100px;
+    position: relative;
+    transition: all ease-in-out 1s;
+
+}
+
+.menu-container .nav.visible {
+    opacity: 1;
+    bottom: 0;
 }
 
 .home-page .nav-menu-item {
@@ -150,6 +131,46 @@ body, div, ul, nav, header, footer, a, li, label {
     line-height: 55px;
     text-transform: uppercase;
     max-width: max-content;
+}
+/*-----------MENU INDEX ENDS-------*/
+
+/*-----------SOCIAL-------*/
+.social-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: -120px;
+}
+
+.social-container .social {
+    display: flex;
+    justify-content: center;
+    gap: 46px;
+    font-size: 1.3rem;
+    position: relative;
+    color: #fff;
+    z-index: 20;
+    opacity: 0;
+    bottom: -150px;
+    transition: all ease-in-out 1s;
+}
+
+.social-container .social a {
+    color: #fffc;
+    transition: all ease .2s;
+}
+
+.social-container .social.visible {
+    opacity: 1;
+    bottom: 0;
+}
+/*-----------SOCIAL ENDS-------*/
+
+/*-----------HOME ENDS-------*/
+.nav-menu {
+    display: flex;
+    list-style: none;
 }
 
 .nav-menu-item {
@@ -181,6 +202,11 @@ body, div, ul, nav, header, footer, a, li, label {
 .nav-menu-link.selected::after,
 .nav-menu a:hover::after {
     opacity: .9;
+}
+
+.nav-link {
+    color: inherit;
+    text-decoration: none;
 }
 
 .nav-menu-link{
@@ -224,28 +250,6 @@ body, div, ul, nav, header, footer, a, li, label {
     max-width: 1400px;
     margin: 0;
     height: 100%;
-}
-
-/* .hidden {
-    display: none;
-} */
-
-.home-page .nav {
-    opacity: 0;
-    bottom: -200;
-    position: relative;
-    transition: all ease-in-out 1.3s;
-}
-
-
-.home-page .nav.visible {
-    opacity: 1;
-    bottom: 0;
-}
-
-.social-container .social.visible {
-    opacity: 1;
-    bottom: 5px;
 }
 
 /* ---------HEADER ENDS------*/

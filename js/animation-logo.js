@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		const logo =
 		document.querySelector('.home-page .logo-img');
 		const menu =
-		document.querySelector('.home-page .nav');
+		document.querySelector('.menu-container .nav');
 		const footer =
 		document.querySelector('.social-container .social');
 
