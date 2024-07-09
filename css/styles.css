@@ -59,6 +59,7 @@ body, div, ul, nav, header, footer, a, li, label {
     justify-content: center;
     align-items: center;
     width: 100%;
+    position: relative;
 }
 
 .home-page .social {
@@ -224,10 +225,12 @@ body, div, ul, nav, header, footer, a, li, label {
 .home-page .nav, .home-page .social {
     opacity: 0;
     transition: opacity 2s ease-in-out;
+    bottom: -100;
 }
 
 .home-page .nav.visible, .home-page .social.visible {
     opacity: 1;
+    bottom: 0;
 }
 
 /* ---------HEADER ENDS------*/
