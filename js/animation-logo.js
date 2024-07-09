@@ -34,10 +34,16 @@ document.addEventListener('DOMContentLoaded', function() {
 			}
 
 	if (window.matchMedia("(max-width: 768px)").matches) {
-		var scrollDownContainer = document.querySelector('.scroll-down.visible');
-		if (scrollDownContainer) {
-			scrollDownContainer.classList.remove('visible');
+		document.querySelectorAll('.scroll-down.visible').forEach(function(element) {
+			element.classList.remove('visible');
+		});
 		}
-	}
+	
+	window.addEventListener("resize", function() {
+		if (this.window.matchMedia("(max-width: 768px)").matches) {
+			document.querySelectorAll('.scroll-down.visible').forEach(function(element) {
+				element.classList.remove('visible');
+			});
+		}
+	});
 });
-

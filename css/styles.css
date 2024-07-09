@@ -1036,6 +1036,10 @@ footer {
         height: 100%;
     }
 
+    .social-container {
+        bottom: -80px;
+    }
+
     .home-page .nav-menu {
         position: static;
         height: 100%;
@@ -1187,6 +1191,10 @@ footer {
     }
 
     .release-img-container {
+        display: none;
+    }
+
+    .scroll-container {
         display: none;
     }
 }
