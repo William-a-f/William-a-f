@@ -71,7 +71,7 @@ body, div, ul, nav, header, footer, a, li, label {
     z-index: 20;
     opacity: 0;
     bottom: -150;
-    position: relative;
+    position: absolute;
     transition: all ease-in-out 1.3s;
 }
 
