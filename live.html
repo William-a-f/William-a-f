@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="/css/scroll.css">
+    <script defer src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script defer src="js/main.js"></script>
     <script defer src="/js/entries.js"></script>
     <link rel="icon" href="assets/img/Iconos/icon-logo.ico" type="image/ico">
@@ -21,7 +22,10 @@
     <meta property="og:description" content="Welcome to Zarek's official website. New ep Lady Shake is out now.">
     <meta property="og:image" content="/assets/img/Catalogo/ep-lady-shake.png">
 </head>
-<body>
+<body class="oculto">
+    <div class="loader-container" id="onload">
+      <div class="lds-dual-ring"></div>
+    </div>
     <section id="live">
 <header class="header">
   <nav class="nav">

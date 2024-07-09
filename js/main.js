@@ -1,3 +1,8 @@
+window.onload = function(){
+	$('#onload').fadeOut();
+	$('body').removeClass('oculto');
+}
+
 const navToggle = document.querySelector(".nav-toggle");
 const navMenu = document.querySelector(".nav-menu");
 
