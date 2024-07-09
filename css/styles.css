@@ -113,15 +113,15 @@ body, div, ul, nav, header, footer, a, li, label {
     z-index: 20;
     margin-bottom: 30px;
     opacity: 0;
-    bottom: -100px;
+    top: -200px;
     position: relative;
-    transition: all ease-in-out 1s;
+    transition: all ease-in-out 1.3s;
 
 }
 
 .menu-container .nav.visible {
     opacity: 1;
-    bottom: 0;
+    top: 0;
 }
 
 .home-page .nav-menu-item {
@@ -152,8 +152,8 @@ body, div, ul, nav, header, footer, a, li, label {
     color: #fff;
     z-index: 20;
     opacity: 0;
-    bottom: -150px;
-    transition: all ease-in-out 1s;
+    bottom: -200px;
+    transition: all ease-in-out 1.3s;
 }
 
 .social-container .social a {
