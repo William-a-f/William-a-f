@@ -141,7 +141,7 @@ body, div, ul, nav, header, footer, a, li, label {
     justify-content: center;
     align-items: center;
     position: relative;
-    bottom: -170px;
+    bottom: -130px;
 }
 
 .social-container .social {
