@@ -559,7 +559,7 @@ body, div, ul, nav, header, footer, a, li, label {
     position: relative;
     opacity: 0;
     bottom: -150px;
-    transition: all ease-in-out 2s;
+    transition: opacity ease-in-out 2.6s, bottom ease-in-out 1s;
 }
 
 .scroll-down.visible {
