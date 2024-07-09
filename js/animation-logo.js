@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		const menu =
 		document.querySelector('.home-page .nav');
 		const footer =
-		document.querySelector('.home-page .social');
+		document.querySelector('.social-container .social');
 
 	
 	if (window.location.pathname === '/' || window.location.pathname.endsWith('/index.html')) {
