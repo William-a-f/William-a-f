@@ -815,6 +815,136 @@ body, div, ul, nav, header, footer, a, li, label {
 }
 
 /*--------BOOKING SECTION------*/
+.form h2 {
+    text-shadow: 0 0 10px #0009;
+}
+
+/*--------CARDS---------*/
+.contact-table {
+    display: flex;
+    font-family: inherit;
+    justify-content: center;
+    gap: 80px;
+    align-items: center;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 20px;
+
+}
+
+.card-item {
+    width: 250px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background-image: radial-gradient(#0007, #0005);
+    margin-bottom: 40px;
+}
+
+.card-item:hover {
+    scale: 1.07;
+}
+
+.icon-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+
+.icon-title h3 {
+    text-align: center;
+    margin: 0;
+    font-size: 1.1em;
+    text-transform: uppercase;
+}
+
+.card-link {
+    list-style: none;
+    text-decoration: none;
+} 
+
+.card-link a {
+    font-family: inherit;
+    color: #fff;
+    font-size: 1em;
+    transition: all .2s ease-in-out;
+}
+
+.card-link a:hover {
+    color: #4498b4;
+    text-shadow: 0 2px 10px #0007;
+}
+
+.card-item i {
+    font-size: 1.7em;
+    color: #4498b4;
+    margin-right: 8px;
+}
+/*------------CARDS END---------*/
+
+/*-------CONTACT TEXT-----*/
+.contact-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+}
+.formulario {
+    width: 50%;
+}
+
+.contact-text-container {
+    width: 47%;
+    margin-right: 30px;
+    font-size: 1.7em;
+    color: #000b;
+    font-weight: bold;
+    border-right: 1px solid #1a7fa2;
+    box-shadow: 10px 10px 10px #0002;
+}
+
+.contact-text-container p {
+    width: 100%;
+    font-weight: 500;
+    text-align: left;
+    padding: 0;
+}
+
+.list-info {
+    margin-top: 50px;
+}
+.contact-text-container ul {
+    padding-left: 20px;
+    list-style-position: initial;
+}
+
+.contact-text-container li {
+    font-size: .5em;
+    width: 70%;
+    font-weight: 500;
+    color: #000a;
+    text-shadow: none;
+    margin-bottom: 20px;
+}
+
+section .form {
+    position: relative;
+    overflow: hidden;
+    background-color: #bfcbd4;
+}
+
+.contact-img {
+    width: 50%;
+    position: absolute;
+    z-index: -200;
+    top: -50px;
+    right: 0;
+}
 
 .form {
     min-height: 60dvh;
@@ -894,6 +1024,7 @@ body, div, ul, nav, header, footer, a, li, label {
     font-weight: bold;
     cursor: pointer;
     text-align: center;
+    transition: all .2s ease-in-out;
 }
 
 .form__input-container input[type="submit"]:hover {
@@ -1339,6 +1470,40 @@ footer {
         padding: 12px;
     }
 
+}
+
+@container form (max-width: 1030px){
+    section .contact-img-container {
+        display: none;
+    }
+}
+
+@container form (max-width: 700px){
+    .contact-container {
+        flex-direction: column;
+    }
+    .contact-text-container {
+        width: 100%;
+        margin-bottom: 25px;
+        border-right: unset;
+        box-shadow: 0 10px 15px #0003;
+    }
+    .form-back {
+        background-image: none;
+    }
+    .formulario {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact-table {
+        gap: 10px;
+        width: 100%;
+    }
+    .card-item {
+        width: 100%;
+    }
 }
 
 @container form (max-width: 450px){
