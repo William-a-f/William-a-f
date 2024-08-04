@@ -357,7 +357,7 @@ body, div, ul, nav, header, footer, a, li, label {
 .release-text, .release-img {
     opacity: 0;
     position: relative;
-    transition: all 1.5s ease;
+    transition: all 1.9s ease;
 }
 .release-text.animate {
     left: 0;
