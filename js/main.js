@@ -1,8 +1,12 @@
-// scroll-animacion
-window.onload = function(){
-	$('#onload').fadeOut();
-	$('body').removeClass('oculto');
-}
+window.addEventListener('load', function() {
+	var preloader = document.getElementById('onload');
+	var content = document.getElementById('main-content');
+
+	preloader.style.display = 'none';
+	content.style.display = 'block';
+
+	document .body.classList.remove('no-scroll');
+});
 
 // animacion de entrada laterales release
 window.addEventListener('load', function() {
