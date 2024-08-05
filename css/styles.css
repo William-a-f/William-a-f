@@ -352,17 +352,19 @@ body, div, ul, nav, header, footer, a, li, label {
     background-color: #0006;
     left: -100%;
     text-align: left;
+    position: relative;
+    animation: slideInLeft 1.3s ease-in-out forwards;
 }
 
-.release-text, .release-img {
+/* .release-text, .release-img {
     opacity: 0;
     position: relative;
     transition: all 1.5s ease;
-}
-.release-text.animate {
+} */
+/* .release-text.animate {
     left: 0;
     opacity: 1;
-}
+} */
 
 .release-text h2 {
     margin: 0;
@@ -430,12 +432,14 @@ body, div, ul, nav, header, footer, a, li, label {
     box-shadow: 0 0 30px #c92a2b77;
     border-radius: 25px;
     right: -100%;
+    position: relative;
+    animation: slideInRight 1.3s ease-in-out forwards;
 }
 
-.release-img.animate {
+/* .release-img.animate {
     right: 0;
     opacity: 1;
-}
+} */
 
 .main-img-overlay {
     position: absolute;
@@ -480,13 +484,9 @@ body, div, ul, nav, header, footer, a, li, label {
     justify-content: flex-end;
     align-items: center;
     background-image: none;
-    view-timeline: --bio block;
     align-content: center;
     text-align: center;
     overflow: hidden;
-    animation: aparecer both;
-    animation-timeline: --bio;
-    animation-range: cover 15% cover 40%;
 }
 
 .bio__text-container {
@@ -502,14 +502,38 @@ body, div, ul, nav, header, footer, a, li, label {
 }
 
 .bio-text {
+    position: relative;
     right: -100%;
+    animation: slideInRight 1.3s forwards;
 }
 
-.bio-text, .bio__img-back {
+@keyframes slideInLeft {
+    from {
+        left: -100%;
+        opacity: 0;
+    }
+    to {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        right: -100%;
+        opacity: 0;
+    }
+    to {
+        right: 0;
+        opacity: 1;
+    }
+}
+
+/* .bio-text, .bio__img-back {
     position: relative;
     opacity: 0;
-    transition: all 1.5s ease;
-}
+    transition: all 1.3s ease;
+} */
 
 .bio__text-container h1 {
     margin-top: 0;
@@ -534,10 +558,12 @@ body, div, ul, nav, header, footer, a, li, label {
     height: 100%;
     object-fit: cover;
     object-position: bottom;
+    position: relative;
     left: -100%;
+    animation: slideInLeft 1.3s forwards;
 }
 
-.bio__img-back.animate {
+/* .bio__img-back.animate {
     left: 0;
     opacity: 1;
 }
@@ -545,7 +571,8 @@ body, div, ul, nav, header, footer, a, li, label {
 .bio-text.animate {
     right: 0;
     opacity: 1;
-}
+} */
+
 
 /*---------------BIO SECTION ENDS------------*/
 
