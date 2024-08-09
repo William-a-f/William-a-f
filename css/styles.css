@@ -361,6 +361,7 @@ body, div, ul, nav, header, footer, a, li, label {
     text-align: start;
     font-size: 3.4em;
     text-decoration-color: #3e9bfa;
+    padding-top: 6px;
 }
 
 .release-text h3 {
@@ -398,6 +399,7 @@ body, div, ul, nav, header, footer, a, li, label {
 .listen-here {
     display: flex;
     align-items: center;
+    padding-bottom: 6px;
 }
 .title-listen {
     margin-right: 30px;
@@ -406,10 +408,9 @@ body, div, ul, nav, header, footer, a, li, label {
 .m-platforms {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 13px;
     font-size: 1.4rem;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin: 15px 8px 15px 0;
     color: #fff;
 }
 
@@ -419,11 +420,9 @@ body, div, ul, nav, header, footer, a, li, label {
 }
 
 .m-platforms a:hover {
-    transform: scale(1.5);
+    transform: scale(1.4);
     color: #3e9bfa;
 }
-
-
 
 /* .release-text>.button a:hover {
     background-color: #c92a2b;
@@ -1326,7 +1325,7 @@ footer {
         margin: 0 18px 0 18px;
     }
 
-    .release-text>.button {
+    /* .release-text>.button {
         width: 100%;
         margin-bottom: 50px;
         margin-top: 20px;
@@ -1336,6 +1335,20 @@ footer {
     .release-text>.button a {
         text-align: start;
         padding: 10px 10%;
+    } */
+
+    .listen-here {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .title-listen {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .m-platforms {
+        margin-top: 0;
     }
 
     .release-img-container {
