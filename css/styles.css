@@ -927,6 +927,15 @@ body, div, ul, nav, header, footer, a, li, label {
     width: 50%;
 }
 
+.mailing {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.contact-table {
+    margin-top: 50px;
+}
+
 .contact-text-container {
     width: 47%;
     margin-right: 30px;
